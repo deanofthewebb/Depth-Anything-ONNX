@@ -76,7 +76,8 @@ def infer(img: str, model: str, viz: bool = False):
 
         final_result = cv2.vconcat([caption_space, combined_results])
 
-        cv2.imwrite("/content/depth-anything.png", final_result)
+        cv2.imwrite("/content/final-depth-anything.png", final_result)
+        cv2.imwrite("/content/depth-anything.png", depth_color)
 
     return depth
 
