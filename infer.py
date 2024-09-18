@@ -31,7 +31,7 @@ def infer(img: str, model: str, viz: bool = False):
     image, (orig_h, orig_w) = load_image(img)
 
     session = ort.InferenceSession(
-        model, providers=["CUDAExecutionProvider", "CPUExecutionProvider"]
+        model, providers=[ "CPUExecutionProvider"]
     )
     depth = session.run(None, {"image": image})[0]
 
