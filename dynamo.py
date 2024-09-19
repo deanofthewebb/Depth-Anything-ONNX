@@ -1,4 +1,5 @@
-from enum import StrEnum, auto
+from strenum import StrEnum
+from enum import auto
 from pathlib import Path
 from typing import Annotated, Optional
 
