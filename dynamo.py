@@ -194,7 +194,7 @@ def infer(
     ] = 518,
     device: Annotated[
         InferenceDevice, typer.Option("-d", "--device", help="Inference device.")
-    ] = InferenceDevice.cuda,
+    ] = InferenceDevice.cpu,
     output_path: Annotated[
         Optional[Path],
         typer.Option(
